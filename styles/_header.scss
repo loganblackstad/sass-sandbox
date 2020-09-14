@@ -2,6 +2,7 @@
 
 @mixin flexCenter {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 20vh;
@@ -10,7 +11,10 @@
 
 header {
   background: lightblue;
+
+  // mix-in include
   @include flexCenter();
+  
   color: $textColor;
   button {
     background: $primaryBtn;
@@ -19,11 +23,11 @@ header {
     }
     &::after{
       content: " after";
-      font: italic;
+      font-style: italic;
     }
     &::before{
       content: "before ";
-      font: italic;
+      font-style: italic;
     }
   } 
 }

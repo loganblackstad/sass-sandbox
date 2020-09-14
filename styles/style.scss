@@ -9,3 +9,8 @@
 .contact button {
   background: $primaryBtn;
 }
+
+// "flexCenter" mix-in imported from "_header.scss"  
+.contact{
+  @include flexCenter;
+}
