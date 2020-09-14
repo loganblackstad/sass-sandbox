@@ -2,9 +2,18 @@
 // scss files need to be imported
 // filename structure: "_filename.scss"
 
+// mix-in
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
 @import "./variables";
 @import "./header";
 
+button {
+  @include border-radius(5px);
+  padding: 10px;
+}
 
 .contact button {
   background: $primaryBtn;

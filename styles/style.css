@@ -35,6 +35,11 @@ header button::before {
   font-style: italic;
 }
 
+button {
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .contact button {
   background: #acfce4;
 }
