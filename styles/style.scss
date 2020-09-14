@@ -8,8 +8,9 @@
 // partials - scss files that need to be imported
 // filename structure: "_filename.scss"
 // need @use or @import to use partials
+// @use loads partials as a module
 
-// mix-in
+// mix-in - create css declarations with declared $property(s)
 @mixin border-radius($radius) {
   border-radius: $radius;
 }
@@ -30,3 +31,19 @@ button {
 .contact{
   @include flexCenter;
 }
+
+// Inheritance
+
+%message-shared {
+  border: 1px solid rgb(204, 38, 38);
+  padding: 10px;
+  color: #333;
+}
+
+.info {
+  @extend %message-shared;
+}
+
+// Operators
+// Doing math in your CSS is very helpful
+// Sass has a handful of standard math operators like +, -, *, /, and %
