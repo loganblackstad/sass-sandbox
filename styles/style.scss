@@ -1,22 +1,6 @@
 
-$primaryBtn: rgb(172, 252, 228);
-$textColor: rgb(41, 46, 44);
-
-header {
-  background: lightblue;
-  display: flex;
-  justify-content: center;
-  color: $textColor;
-  button {
-    background: $primaryBtn;
-    &:hover {
-      background: darkred;
-    }
-    &::after{
-      content: "Hellooooo";
-    }
-  } 
-}
+@import "./variables";
+@import "./header";
 
 
 .contact button {

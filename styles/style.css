@@ -18,7 +18,11 @@ header button:hover {
 }
 
 header button::after {
-  content: "Hellooooo";
+  content: " after";
+}
+
+header button::before {
+  content: "before ";
 }
 
 .contact button {
