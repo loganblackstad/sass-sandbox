@@ -1,0 +1,29 @@
+// mix-ins
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+
+header {
+  background: lightblue;
+  @include flexCenter();
+  color: $textColor;
+  button {
+    background: $primaryBtn;
+    &:hover {
+      background: darkred;
+    }
+    &::after{
+      content: " after";
+      font: italic;
+    }
+    &::before{
+      content: "before ";
+      font: italic;
+    }
+  } 
+}
