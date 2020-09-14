@@ -1,6 +1,13 @@
+// Sass features (that don't exist in CSS yet):
+//   - variables (check)
+//   - nesting (check)
+//   - partials (check)
+//   - mixins (check)
+//   - inheritance
 
-// scss files need to be imported
+// partials - scss files that need to be imported
 // filename structure: "_filename.scss"
+// need @use or @import to use partials
 
 // mix-in
 @mixin border-radius($radius) {
@@ -8,7 +15,7 @@
 }
 
 @import "./variables";
-@import "./header";
+@use "./header";
 
 button {
   @include border-radius(5px);
